@@ -8,30 +8,45 @@
     android:orientation="vertical"
     android:layout_gravity="center">
 
+    <ProgressBar
+        android:id="@+id/progress_id"
+        android:layout_width="50dp"
+        android:layout_height="12dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/tv_image"
-        android:layout_width="113dp"
-        android:layout_height="143dp"
+        android:layout_width="279dp"
+        android:layout_height="188dp"
         android:layout_gravity="center"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/tv_title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.681"
+        app:layout_constraintVertical_bias="0.872"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/tv_title"
-        android:layout_width="166dp"
-        android:layout_height="37dp"
+        android:layout_width="276dp"
+        android:layout_height="47dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toTopOf="@+id/tv_overview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -49,15 +64,12 @@
 
     <RatingBar
         android:id="@+id/rb_vote"
-        android:layout_width="237dp"
-        android:layout_height="42dp"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
         android:layout_gravity="center"
-        android:layout_marginStart="104dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="76dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

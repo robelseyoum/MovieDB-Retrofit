@@ -8,12 +8,21 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <ProgressBar
+        android:id="@+id/progress_id"
+        android:layout_width="137dp"
+        android:layout_height="104dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyler_view_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </androidx.recyclerview.widget.RecyclerView>
+
 
 
 

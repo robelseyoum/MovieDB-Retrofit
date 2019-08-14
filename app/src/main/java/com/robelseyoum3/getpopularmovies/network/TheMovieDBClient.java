@@ -22,13 +22,14 @@ public interface TheMovieDBClient {
     @GET("movie/popular")
     Call<MovieDBModel> getTopMovies(@Query("api_key") String userkey);
 
-//    @GET("movie/popular")
-//    Call<Details> getTopDetailes(@Query("api_key") String userkey);
+    @GET("movie/{movie_id}")
+    Call<Details> getTopDetailes(@Path("movie_id") int id, @Query("api_key") String apiKey);
 
+    //Call<Details> getTopDetailes(@Path("movie_id") String movie_id);
+    // @GET("movie/{movie_id}/videos")
+    // Call getMovieTrailer(@Path("movie_id") int id, @Query("api_key") String apiKey);
 
-
-
-    //    Call<MovieDBModel> getTopMovies(@Query("page") int page, @Query("api_key") String userkey);
+    //  Call<MovieDBModel> getTopMovies(@Query("page") int page, @Query("api_key") String userkey);
 
     //here used to dynamically assign the user name
 
